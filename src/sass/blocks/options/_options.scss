@@ -1,0 +1,57 @@
+.options {
+    padding-top: 80px;
+    &__wrapper {
+        padding-top: 80px;
+        height: 580px;
+        background: url('../img/options/options.jpg') center center / cover no-repeat;
+    }
+    &__title {
+        @include styleForTitle;
+        color: #ffffff;
+        margin: 0;
+        padding: 0 350px 0 350px;
+      
+    }
+    &__items {
+        margin-top: 128px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        &:first-child {
+            width: 484px;
+            .options__subtitle {
+                text-align: right;
+            }
+            .options__text {
+                text-align: right;
+            }
+        }
+        &:last-child {
+            width: 484px;
+            .options__subtitle {
+                text-align: left;
+            }
+            .options__text {
+                text-align: left;
+            }
+        }
+    }
+    &__subtitle {
+        font-size: 30px;
+        line-height: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: right;
+    }
+    &__text {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+
+
+}

@@ -1,0 +1,29 @@
+.privilege {
+    padding-top: 81px;
+    &__title {
+        @include styleForTitle;
+        padding: 0 318px 0 318px;
+    }
+    &__items {
+        margin-top: 44px;
+    }
+    &__item {
+        position: relative;
+        height: 355px;
+        padding: 0;
+    }
+    &__text {
+        width: 100%;
+        padding: 0 115px 0 118px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 23px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #ffffff;
+       
+    }
+}

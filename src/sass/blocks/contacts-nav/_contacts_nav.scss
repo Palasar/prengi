@@ -1,0 +1,53 @@
+.contacts {
+    &__wrapper {
+        position: relative;
+        margin-top: 19px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__country {
+        display: flex;
+    }
+    &__text {
+        margin-left: 11px;
+    }
+    &__nameCountry {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #242424;
+    }
+    &__tel, &__adress {
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+.navigation {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        width: 540px;
+        li {
+            &:last-child {
+                display: none;
+            }
+            a {
+                text-decoration: none;
+                font-size: 13px;
+                line-height: 26px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+        }
+    }
+}

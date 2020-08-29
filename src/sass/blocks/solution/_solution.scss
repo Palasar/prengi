@@ -1,0 +1,83 @@
+.solution {
+    height: 889px;
+    padding-top: 81px;
+    background: url('../img/solutions/solutions_bg.jpg') center center / cover no-repeat;
+   &__title {
+    @include styleForTitle;
+    color: #ffffff;
+    text-align: center;
+    width: 625px;
+    margin: 0 auto;
+   }
+   &__tab {
+        &_nav {
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            width: 843px;
+            height: 64px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            margin: 25px  auto 0 auto;
+            li {
+                margin: auto 0 auto 0;
+                font-size: 14px;
+                line-height: 25px;
+                font-weight: 400;
+                color: #ffffff;
+                border-right: 1px solid #ffffff; 
+                padding-right: 27px;
+                height: 50px;
+                line-height: 50px;
+                transition: all .5s;
+                &.active{
+                    font-weight: 700;
+                color: #00c2f0;  
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+                &:last-child {
+                    border: none;
+                }
+            }
+  
+
+        }
+
+   }
+   &__slider {
+    display: none;
+    margin: 36px auto 0 auto;
+    width: 947px;
+    height: 560px;
+    background: url('../img/solutions/frame_slader.png') center center / cover no-repeat;
+    padding-top: 35px;
+    &-active{
+        display: block;
+    }
+    &_wrapper {
+        width: 695px;
+        height: 460px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+   }
+   .slick-prev, .slick-next {
+        position: absolute;
+        width: 18px;
+        height: 59px;
+        background: none;
+        border: none;
+        top: 48%;
+        transform: translateY(-50%);
+   }
+   .slick-next {
+       right: -173px;
+   }
+   .slick-prev{
+        left: -173px;
+   }
+}
