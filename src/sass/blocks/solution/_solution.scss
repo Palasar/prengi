@@ -33,7 +33,7 @@
                 transition: all .5s;
                 &.active{
                     font-weight: 700;
-                color: #00c2f0;  
+                    color: #00c2f0;  
                 }
                 &:hover {
                     cursor: pointer;
@@ -48,6 +48,7 @@
 
    }
    &__slider {
+    position: relative;
     display: none;
     margin: 36px auto 0 auto;
     width: 947px;
@@ -58,26 +59,67 @@
         display: block;
     }
     &_wrapper {
+        position: relative;
         width: 695px;
         height: 460px;
         margin: 0 auto;
         background-color: #fff;
     }
-
-   }
-   .slick-prev, .slick-next {
+    &_inner{
+        display: flex;
+        position: relative;
+        
+    }
+    &_prev {
         position: absolute;
+        left: -47px;
+        top: 50%;
+        transform: translateY(-50%);
         width: 18px;
         height: 59px;
-        background: none;
-        border: none;
-        top: 48%;
+        span {
+            display: block;
+            width: 100%;
+            height: 50%;
+            border-left: 3px solid #00c2f0;
+            &:first-child{
+                transform: translate(6px, 6px) rotate(30deg);
+            }
+            &:last-child{
+                transform: translate(6px, -6px) rotate(-30deg);
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+       
+    }
+    &_next {
+        position: absolute;
+        right: -29px;
+        top: 50%;
         transform: translateY(-50%);
+        width: 18px;
+        height: 59px;
+        span {
+            display: block;
+            width: 100%;
+            height: 50%;
+            border-left: 3px solid #00c2f0;
+            &:first-child{
+                transform: translate(6px, -1px) rotate(-30deg);
+            }
+            &:last-child{
+                transform: translate(6px, 1px) rotate(30deg);
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+   
    }
-   .slick-next {
-       right: -173px;
-   }
-   .slick-prev{
-        left: -173px;
-   }
+}
+.shifting {
+    transition: left .5s;
 }
